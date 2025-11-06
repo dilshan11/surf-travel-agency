@@ -1,9 +1,26 @@
 /********** Template CSS **********/
 :root {
-    --primary: #86B817;
+    --primary: #00A6FB;
     --secondary: #FE8800;
     --light: #F5F5F5;
     --dark: #14141F;
+
+    --bs-primary: var(--primary) !important;
+    --bs-secondary: var(--secondary) !important;
+    --bs-light: var(--light) !important;
+    --bs-dark: var(--dark) !important;
+}
+
+/* Force variable-based text and backgrounds */
+.text-primary {
+  color: var(--bs-primary) !important;
+}
+.bg-primary {
+  background-color: var(--bs-primary) !important;
+}
+.btn-primary {
+  background-color: var(--bs-primary) !important;
+  border-color: var(--bs-primary) !important;
 }
 
 .fw-medium {
@@ -342,12 +359,12 @@
 
 .package-item img {
     transition: .5s;
+     object-fit: cover
 }
 
 .package-item:hover img {
     transform: scale(1.1);
 }
-
 
 /*** Booking ***/
 .booking {
@@ -524,3 +541,4 @@
     padding-right: 0;
     border-right: none;
 }
+
