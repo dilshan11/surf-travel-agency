@@ -141,13 +141,21 @@
 .hero-header-custom .hero-video {
   position: absolute;
   top: 50%;
-  left: 50%;
-  width: 100%;
+  left: 17%;
+  width: 33%;
   height: 100%;
   object-fit: cover;
   transform: translate(-50%, -50%);
   z-index: 0;
   filter: brightness(100%);
+}
+
+.hero-header-custom .middle-video{
+    left: 49%;
+}
+
+.hero-header-custom .right-video{
+    left: 82%;
 }
 
 /* Gradient overlay */
